@@ -1,0 +1,119 @@
+.menu-container{
+    display: none;
+}
+#ul{
+    list-style: none;
+  }
+#a{
+    text-decoration-line: none;
+    color: #fff;
+}
+.Menu-web{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.Menu-Secundario{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.Menus{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+@media only screen and (max-width: 400px){
+    nav {
+        background: #00652e;  
+        height: 9rem;    	
+    }
+    div .navbar-light .navbar-toggler {
+        border-color: white;
+    }
+ 
+    .material-icons-outlined{
+        vertical-align: middle;
+        position: relative;
+    }
+    .Hamburger{
+        margin-top: 2.5rem;
+        margin-left: 12rem;
+    } 
+    #estilo-botao-menu{
+        color: #ffff;
+        background: none;
+        border-color: #fff;
+        border-radius: 5px;
+        width: 45px;
+        height: 45px;
+    }
+   
+    .navbar-light .navbar-nav a.nav-link {
+        color: #f8f9fa;
+        font-size: 18px;
+        font-family: sans-serif;
+        transition: all 0.2ms;
+        text-decoration: none;
+        
+    }
+
+    .menu-estilo{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .campos{
+        display: grid;
+        grid-gap: 1rem;
+    }
+    #link1{
+        list-style-type: none;
+    }
+    #link2{
+        list-style-type: none;
+    }
+    #link3{
+        list-style-type: none;
+    }
+    #link4{
+        list-style-type: none;
+    }
+    div li .dropright .dropdown .nav-item {
+        font-size: 16px;
+    }
+    .Menu-web{
+        display: none;
+    }
+    #cabecalho{
+        height: 7rem;
+    }
+    .menu.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu{
+        opacity: 0;
+    }
+   
+    .menu-button{
+        cursor: pointer;
+       
+    }
+    #cor-botao-menu{
+        background: #00652e;
+        color: #ffff;
+        width: 3rem;
+        border-color: #ffff;
+        height: 3rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+    }
+    #ul{
+      list-style: none;
+    }
+    #a{
+        text-decoration-line: none;
+        color: #fff;
+    }
+    .link1{       
+        margin-left: 15rem;
+    }
+
+}

@@ -1,0 +1,157 @@
+
+body{
+    background: #00652e;
+    font-family: sans-serif;
+}
+p{
+    font-size: 42px;
+    color: #00652e;
+}
+img{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    
+}
+#estilo-card{
+    background: #ffff;
+    width: 81rem;
+    height: 35rem;
+    border-radius: 30px;
+}
+.card-principal{
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 0.7rem;
+}
+.Campos{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    
+}   
+#Estilo-Campo-Nome{
+    width: 17rem;
+    height: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #00652e;
+    background-color: none;
+    
+}
+.campos2{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    margin-top: -6rem;
+}
+
+input:focus{
+    outline: none;
+}
+#cor-botao{
+    background: #00652e;
+    color: #ffff;
+    width: 10rem;
+    border-color: #ffff;
+    height: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+}
+
+#tamanho-qrcode{
+    width: 10rem;
+    height: 10rem;
+}
+.qrcode{
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        background: #00652e;
+        font-family: sans-serif;
+    }
+    #titulo-consulta{
+        font-size: 32px;
+        color: #00652e;
+    }
+    img{
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        
+    }
+    #estilo-card{
+        background: #ffff;
+        width: 22rem;
+        height: 40rem;
+        border-radius: 30px;
+    }
+    .card-principal{
+        display: grid;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-left: 0.7rem;
+    
+    }
+    .Campos{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        
+    }   
+    #Estilo-Campo-Nome{
+        width: 17rem;
+        height: 2rem;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: #00652e;
+        background-color: none;
+        
+    }
+    .campos2{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        margin-top: -6rem;
+    }
+    
+    input:focus{
+        outline: none;
+    }
+
+    #cor-botao-baixar{
+        background: #00652e;
+        color: #ffff;
+        width: 10rem;
+        border-color: #ffff;
+        height: 2.5rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+    }
+    #cor-botao-pdf{
+        background: #00652e;
+        color: #ffff;
+        width: 15rem;
+        border-color: #ffff;
+        height: 2.5rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+    }
+    .Botao-baixar-pdf{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    #tamanho-qrcode{
+        width: 8rem;
+        height: 8rem;
+    }
+    .qrcode{
+        margin-right: 1rem;
+    }
+   
+    
+}
