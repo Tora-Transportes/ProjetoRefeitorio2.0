@@ -53,6 +53,9 @@ function Menu() {
                             <NavItem id='link4'>
                                 <NavLink href="/" >Sair<i className="material-icons-outlined">login</i></NavLink>
                             </NavItem>
+                            <NavItem id='link5'>
+                                <NavLink href="/gerarlista" >CPF's inválidos</NavLink>
+                            </NavItem>
                         </div>
                     </Nav>
 
