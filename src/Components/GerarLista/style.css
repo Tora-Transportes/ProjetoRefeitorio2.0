@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        font-family: sans-serif;
+    }
+    #estilo-card-gerar-lista{
+        background-color: #ffffff;
+        border-radius: 30px;      
+        width: 22rem;
+        height: 40rem;
+    }
+    .card-gerar{
+        margin-left: 0.6rem;
+    }
+    #titulo-gerar-cpf{
+        font-size: 24px;
+    }
+    .linha1-titulo{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .titulo-geralista{
+        margin-top: 2rem;
+    }
+    #botao-cor-gerarlist{
+        background: #00652e;
+        color: #ffff;
+        width: 7rem;
+        border-color: #ffff;
+        height: 2rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+        font-size: 14px;
+        border: none;
+     
+    }
+    #botao-cor-gerarlist:hover{
+        outline: 0  !important;
+    }
+    .gerarlista{
+        margin-top: -3rem;
+        margin-left: 1rem;
+        
+    }
+    .linha2-textarea{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+ 
+    #estilo-textarea{
+        font-family: sans-serif;
+        width: 20rem;
+        height: 27rem;
+        border-radius: 30px;
+        border-color: #00652e;
+        border-width: 2px;
+        text-align: center;
+        overflow: auto;
+    }
+    #estilo-textarea:hover{
+        text-decoration: none;
+        outline: none;
+        transition: none;
+    }
+    .input-textarea{
+        margin-top: 2rem;
+    }
+    #estilo-botao-salvarcpf{
+        background: #00652e;
+        color: #ffff;
+        width: 10rem;
+        border-color: #ffff;
+        height: 2.5rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+        font-size: 18px;
+        border: none;
+    }
+    .botao-salvarlista{
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
+}

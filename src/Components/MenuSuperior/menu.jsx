@@ -48,14 +48,15 @@ function Menu() {
                                 <NavLink href="/consulta" >Consulta QRcode</NavLink>
                             </NavItem>
                             <NavItem id='link3'>
-                                <NavLink href="/home" >Cadastro</NavLink>
+                                <NavLink href="/" >Cadastro</NavLink>
                             </NavItem>
                             <NavItem id='link4'>
-                                <NavLink href="/" >Sair<i className="material-icons-outlined">login</i></NavLink>
-                            </NavItem>
-                            <NavItem id='link5'>
                                 <NavLink href="/gerarlista" >CPF's inválidos</NavLink>
                             </NavItem>
+                            <NavItem id='link5'>
+                                <NavLink href="/" >Sair<i className="material-icons-outlined">login</i></NavLink>
+                            </NavItem>
+                         
                         </div>
                     </Nav>
 

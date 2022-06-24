@@ -36,6 +36,7 @@
     .Hamburger{
         margin-top: 2.5rem;
         margin-left: 12rem;
+
     } 
     #estilo-botao-menu{
         color: #ffff;
@@ -44,6 +45,7 @@
         border-radius: 5px;
         width: 45px;
         height: 45px;
+        border-width: 4px;
     }
    
     .navbar-light .navbar-nav a.nav-link {
@@ -73,6 +75,9 @@
         list-style-type: none;
     }
     #link4{
+        list-style-type: none;
+    }
+    #link5{
         list-style-type: none;
     }
     div li .dropright .dropdown .nav-item {

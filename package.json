@@ -29,7 +29,8 @@
     "styled-components": "^5.3.5",
     "util": "^0.12.4",
     "web-vitals": "^2.1.4",
-    "with": "^7.0.2"
+    "with": "^7.0.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
