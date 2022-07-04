@@ -1,10 +1,10 @@
-const fs = require('fs');
+
 
 function validaCPF(cpf) {
   var Soma = 0
   var Resto
   var CPFinvalido
-
+  var i
   
   var strCPF = String(cpf).replace(/[^\d]/g, '')
 
@@ -35,11 +35,11 @@ function validaCPF(cpf) {
   }
 
 
-  if ((Resto == 10) || (Resto == 11)) {
+  if ((Resto === 10) || (Resto === 11)) {
     Resto = 0
   }
 
-  if (Resto != parseInt(strCPF.substring(9, 10))) 
+  if (Resto !== parseInt(strCPF.substring(9, 10))) 
     
 
   for (i = 1; i <= 10; i++) {
@@ -47,11 +47,11 @@ function validaCPF(cpf) {
     Resto = (Soma * 10) % 11
   }
 
-  if ((Resto == 10) || (Resto == 11)){
+  if ((Resto === 10) || (Resto === 11)){
     Resto = 0
   }
 
-  if (Resto != parseInt(strCPF.substring(10, 11))) {
+  if (Resto !== parseInt(strCPF.substring(10, 11))) {
   
   }
 

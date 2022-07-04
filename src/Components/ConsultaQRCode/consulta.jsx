@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Input } from "reactstrap";
 import { Button } from "@material-ui/core";
-import MenuSuperior from '../MenuSuperior/menu.jsx';
 import style from '../ConsultaQRCode/style.css';
 import jsPDF from 'jspdf';
 import autoTable  from 'jspdf-autotable'
-
+import Menu from '../Menu/menusuperior';
 function Consulta() {
 
 
@@ -59,9 +58,7 @@ function Consulta() {
 
     return (
         <div>
-            <div >
-                <MenuSuperior />
-            </div >
+            <Menu/>     
             <Card id="estilo-card" className="card-principal">
                 <div className="Campos">
                     <p id='titulo-consulta'><strong>Consulta QR Code</strong></p>
@@ -91,6 +88,9 @@ function Consulta() {
                     </div>
                 </div>
             </Card>
+            <div>
+                <footer id="Rodape-estilo" className="Rodape">REFEITORIO TORA 2.0</footer>
+            </div>
         </div>
     )
 }

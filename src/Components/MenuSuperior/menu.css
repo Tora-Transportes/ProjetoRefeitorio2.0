@@ -1,16 +1,24 @@
-.menu-container{
-    display: none;
-}
+
 #ul{
     list-style: none;
   }
 #a{
     text-decoration-line: none;
     color: #fff;
+    padding: .5rem;
 }
+a:hover{
+    background: #00a65053;
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
 .Menu-web{
     display: grid;
     grid-template-columns: auto auto;
+}
+.menu-mobile{
+    display: none;
 }
 .Menu-Secundario{
     margin-top: 3rem;
@@ -18,9 +26,19 @@
 }
 .Menus{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
+.log-tam{
+    margin-left: 2rem;
+}
+
+
+
+
 @media only screen and (max-width: 400px){
+    .menu-mobile{
+        display: block;
+    }
     nav {
         background: #00652e;  
         height: 9rem;    	
@@ -38,6 +56,7 @@
         margin-left: 12rem;
 
     } 
+
     #estilo-botao-menu{
         color: #ffff;
         background: none;
@@ -47,9 +66,14 @@
         height: 45px;
         border-width: 4px;
     }
+    #estilo-botao-menu:hover{
+        outline: none;
+        transition: none;
+       
+    }
    
     .navbar-light .navbar-nav a.nav-link {
-        color: #f8f9fa;
+        color: #ffff;
         font-size: 18px;
         font-family: sans-serif;
         transition: all 0.2ms;
@@ -65,6 +89,7 @@
         display: grid;
         grid-gap: 1rem;
     }
+   
     #link1{
         list-style-type: none;
     }

@@ -22,7 +22,7 @@ img{
     display: grid;
     justify-content: center;
     margin-top: 3rem;
-    margin-left: 0.7rem;
+    margin-left: 1.3rem;
 }
 .Campos{
     display: grid;
@@ -67,22 +67,14 @@ input:focus{
 .qrcode{
     margin-right: 1rem;
 }
-#cor-botao-pdf{
-    background: #00652e;
-    color: #ffff;
-    width: 15rem;
-    border-color: #ffff;
-    height: 2.5rem;
-    border-radius: 30px;
-}
 
 @media only screen and (max-width: 400px){
     body{
         background: #00652e;
         font-family: sans-serif;
     }
-    #titulo-consulta{
-        font-size: 32px;
+    p{
+        font-size: 42px;
         color: #00652e;
     }
     img{
@@ -100,8 +92,7 @@ input:focus{
         display: grid;
         justify-content: center;
         margin-top: 3rem;
-        margin-left: 0.7rem;
-    
+        margin-left: 1.2rem;
     }
     .Campos{
         display: grid;
@@ -117,6 +108,7 @@ input:focus{
         border-right: none;
         border-bottom-color: #00652e;
         background-color: none;
+        font-size: 18px;
         
     }
     .campos2{
@@ -130,7 +122,7 @@ input:focus{
         outline: none;
     }
 
-    #cor-botao-baixar{
+    #cor-botao{
         background: #00652e;
         color: #ffff;
         width: 10rem;
@@ -138,20 +130,6 @@ input:focus{
         height: 2.5rem;
         margin-top: 2rem;
         border-radius: 30px;
-    }
-    #cor-botao-pdf{
-        background: #00652e;
-        color: #ffff;
-        width: 15rem;
-        border-color: #ffff;
-        height: 2.5rem;
-        margin-top: 2rem;
-        border-radius: 30px;
-    }
-    .Botao-baixar-pdf{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
     }
     #tamanho-qrcode{
         width: 8rem;
@@ -163,15 +141,13 @@ input:focus{
    
     
 }
-
 @media (max-width: 600px){
     body{
         background: #00652e;
-        font-family: sans-serif;       
-        overflow: none;
+        font-family: sans-serif;
     }
-    #titulo-consulta{
-        font-size: 32px;
+    p{
+        font-size: 42px;
         color: #00652e;
     }
     img{
@@ -188,9 +164,8 @@ input:focus{
     .card-principal{
         display: grid;
         justify-content: center;
-        margin-top: 3rem;
-        margin-left: 0.7rem;
-    
+        margin-top: 6rem;
+        margin-left: 2rem;
     }
     .Campos{
         display: grid;
@@ -206,6 +181,7 @@ input:focus{
         border-right: none;
         border-bottom-color: #00652e;
         background-color: none;
+        font-size: 18px;
         
     }
     .campos2{
@@ -219,7 +195,7 @@ input:focus{
         outline: none;
     }
 
-    #cor-botao-baixar{
+    #cor-botao{
         background: #00652e;
         color: #ffff;
         width: 10rem;
@@ -227,20 +203,6 @@ input:focus{
         height: 2.5rem;
         margin-top: 2rem;
         border-radius: 30px;
-    }
-    #cor-botao-pdf{
-        background: #00652e;
-        color: #ffff;
-        width: 15rem;
-        border-color: #ffff;
-        height: 2.5rem;
-        margin-top: 2rem;
-        border-radius: 30px;
-    }
-    .Botao-baixar-pdf{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
     }
     #tamanho-qrcode{
         width: 8rem;
