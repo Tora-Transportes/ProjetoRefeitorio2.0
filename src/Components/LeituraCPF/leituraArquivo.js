@@ -2,7 +2,7 @@ const { validaCPF } = require('../../Util/validaCPF')
 const fs = require('fs');
 const readline = require('readline');
 const path = require('path');
-const {SalvaTxt} = require('../CPFInvalidos/gerarlistatxt');
+
 
 
 function readFileByLine(file) {
@@ -18,27 +18,25 @@ function readFileByLine(file) {
     rl.on('line', (line, err, data) => {
         const campos = line.split(' ');
 
-        var x = campos[0]
+        var x = campos[1]
+        let ID = campos[0]
         let cpfinvalido = validaCPF(x)
-        if(cpfinvalido !== undefined)
-        // fs.appendFile('cpfIncorreto.txt', "\n" + cpfinvalido , function (err) {
-          
-        //     if (err) {
-        //         throw err;
-        //     }
-        // })
-        
-        fs.appendFile(path.join(__dirname ,"../Arquivostxt/cpfIncorreto.txt"),"\n" + cpfinvalido,
+        if(cpfinvalido !== undefined)      
+
+     
+        fs.appendFile(path.join(__dirname ,"../../../public/cpfIncorreto.txt"),  "\nID:" + ID + "\t CPF: " + cpfinvalido,
 
             function (err) {
                 if (err) {
                     throw err;
                 } 
+
         });
 
         const user = {
-            CPF: campos[0],
-            NOME: campos.slice(1).join(' ').trim()
+            ID: campos[0],
+            CPF: campos[1],
+            NOME: campos.slice(2).join(' ').trim()
         }
         usersOnFile.push(user);   
 
@@ -49,6 +47,7 @@ function readFileByLine(file) {
         const Response = usersOnFile.sort((a, b) => (a.NOME > b.NOME) - (a.NOME < b.NOME));
         console.log(Response)
 
+       
         const verificaArquivo = 'cpfIncorreto.txt';
         
         if (fs.existsSync(verificaArquivo) ) {
@@ -61,6 +60,7 @@ function readFileByLine(file) {
                     throw err;
                 }
             })
+            console.log("Arquivo Inexistente");
         }
 
     })
@@ -70,3 +70,15 @@ function readFileByLine(file) {
 }
 readFileByLine('listaFuncionario.txt')
 
+
+
+
+
+   
+        // fs.appendFile('cpfIncorreto.txt', "\n" + cpfinvalido , function (err) {
+          
+        //     if (err) {
+        //         throw err;
+        //     }
+        // })
+        

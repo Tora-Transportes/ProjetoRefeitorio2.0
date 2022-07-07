@@ -1,12 +1,8 @@
 import React from "react";
 import { Button, Card, Input } from "reactstrap";
 import style from './style.css';
-import * as yup from 'yup';
-import { NumberSchema } from "yup";
-import { setLocale } from 'yup';
-//import Cpfinvalido from '../Arquivostxt/cpfIncorreto.txt';
 import Menu from '../Menu/menusuperior'
-
+import MaterialIcons from 'material-icons';
 
 function GerarLista() {
 
@@ -18,21 +14,31 @@ function GerarLista() {
                 document.getElementById("estilo-textarea").value = this.responseText;
             }
         }
-        txt.open("GET", "teste.txt");
+        txt.open("GET", "cpfIncorreto.txt");
         txt.send();
+       
     }
+
 
     //Função Para salvar Arquivo txt de CPF's invalidos corrigidos
     var txt = 'CPFCorrigido';
 
-    function SalvaTxt() {
+
+   function SalvaTxt() {
         var resposta = document.getElementById('estilo-textarea').value.trim();
         txt = resposta.split(/\s+/);
 
         console.log(txt);
+       
+       
+        var CPFvalidado = resposta.replace('../LeituraCPF/cpfIncorreto.txt',resposta)
+        console.log(CPFvalidado);
     }
+   
 
-
+   
+   
+  
     return (
         <div>
             <div>
@@ -43,7 +49,7 @@ function GerarLista() {
                         <Button id="botao-cor-gerarlist" className="gerarlista" onClick={loadDoc}>Gerar Lista</Button>
                     </div>
                     <div className="linha2-textarea">
-                        <Input type="textarea" placeholder="Lista CPF's Inválidos" id="estilo-textarea" className="input-textarea"></Input>
+                        <Input  cols="20" rows="50" type="textarea" placeholder="Lista CPF's Inválidos " id="estilo-textarea" className="input-textarea"></Input>
                         <Button id="estilo-botao-salvarcpf" className="botao-salvarlista" onClick={SalvaTxt}>Salvar</Button>
                     </div>
                 </Card>

@@ -57,8 +57,11 @@ body{
     border-color: #00652e;
     border-width: 2px;
     text-align: center;
-    overflow: auto;
-    font-size: 23px;
+    font-size: 17px;
+    resize: none;
+    background-image: url("../img/yWNH7.png");
+    font-size: 21px;
+
 }
 #estilo-textarea:hover{
     text-decoration: none;
@@ -154,8 +157,8 @@ body{
         border-radius: 30px;
         border-color: #00652e;
         border-width: 2px;
-        text-align: center;
         overflow: auto;
+    
     }
     #estilo-textarea:hover{
         text-decoration: none;
@@ -190,7 +193,7 @@ body{
         background-color: #ffffff;
         border-radius: 30px;      
         width: 22rem;
-        height: 40rem;
+        height: 41rem;
     }
     .card-gerar{
         margin-left: 2rem;
@@ -233,16 +236,30 @@ body{
         justify-content: center;
     }
  
-    #estilo-textarea{
+    /* #estilo-textarea{
         font-family: sans-serif;
         width: 20rem;
         height: 27rem;
-        border-radius: 30px;
+        border-radius: 5px;
         border-color: #00652e;
         border-width: 2px;
-        align-items: center;
+        text-align: start;
         overflow: auto;
-        font-size: 22px;
+        background-image: url("../img/yWNH7.png");
+        font-size: 21px;
+    } */
+
+    #estilo-textarea {
+        width: 20rem;
+        height: 27rem;
+        background-attachment: local;
+        background-image: linear-gradient(to right, white 10px, transparent 10px), linear-gradient(to left, white 8px, transparent 10px), repeating-linear-gradient(white, white 30px, #00652E 33px, #00652E 33px, #00652E 33px);
+        line-height: 32.8px;
+        padding: 8px 5px;
+        text-align: start;
+        border-radius: 5px;
+        font-size: 21px;
+
     }
     #estilo-textarea:hover{
         text-decoration: none;
